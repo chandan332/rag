@@ -1,0 +1,10 @@
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sleep infinity
+    network_mode: container:8b983ee04de0783e1875f0fc6ea6965cb4bf255b4ddb77ea33795a8b30aa5a10
+
+networks:
+  ollama_network:
